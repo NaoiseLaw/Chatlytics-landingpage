@@ -12,67 +12,71 @@ export function PricingSection() {
       name: "Free",
       monthlyPrice: "$0",
       annualPrice: "$0",
-      description: "Perfect for individuals starting their journey.",
+      description: "Perfect for streamers just starting out.",
       features: [
-        "Real-time code suggestions",
-        "Basic integration logos",
-        "Single MCP server connection",
-        "Up to 2 AI coding agents",
-        "Vercel deployments with Pointer branding",
+        "Basic sentiment analysis",
+        "24-hour history",
+        "1 stream monitoring",
+        "5-minute update intervals",
+        "Dashboard access only",
       ],
-      buttonText: "Get Started",
+      buttonText: "Start Free",
       buttonClass:
         "bg-zinc-300 shadow-[0px_1px_1px_-0.5px_rgba(16,24,40,0.20)] outline outline-0.5 outline-[#1e29391f] outline-offset-[-0.5px] text-gray-800 text-shadow-[0px_1px_1px_rgba(16,24,40,0.08)] hover:bg-zinc-400",
     },
     {
-      name: "Pro",
+      name: "Professional",
       monthlyPrice: "$20",
       annualPrice: "$16",
-      description: "Ideal for professionals.",
+      description: "For serious streamers ready to grow.",
       features: [
-        "Enhanced real-time previews",
-        "Unlimited integrations with custom logos",
-        "Multiple MCP server connections",
-        "Up to 10 concurrent AI coding agents",
-        "Collaborative coding with team chat",
-        "Advanced version control integrations",
-        "Priority email and chat support",
+        "Everything in Free, plus:",
+        "Emotion detection (6 emotions)",
+        "90-day history",
+        "Trending keywords",
+        "Toxicity alerts",
+        "Mobile apps (iOS & Android)",
+        "Priority support",
+        "Content correlation insights",
       ],
-      buttonText: "Join now",
+      buttonText: "Start Free Trial",
       buttonClass:
         "bg-primary-foreground shadow-[0px_1px_1px_-0.5px_rgba(16,24,40,0.20)] text-primary text-shadow-[0px_1px_1px_rgba(16,24,40,0.08)] hover:bg-primary-foreground/90",
       popular: true,
     },
     {
-      name: "Ultra",
+      name: "Enterprise",
       monthlyPrice: "$200",
       annualPrice: "$160",
-      description: "Tailored solutions for teams.",
+      description: "For teams and agencies.",
       features: [
-        "Dedicated account support",
-        "Unlimited MCP server clusters",
-        "Unlimited AI coding agents",
-        "Enterprise-grade security and compliance",
-        "Priority deployments and SLA guarantees",
+        "Everything in Professional, plus:",
+        "Monitor up to 10 streams",
+        "API access",
+        "Team collaboration",
+        "White-label dashboards",
+        "Custom alert thresholds",
+        "Dedicated account manager",
       ],
-      buttonText: "Talk to Sales",
+      buttonText: "Contact Sales",
       buttonClass:
         "bg-secondary shadow-[0px_1px_1px_-0.5px_rgba(16,24,40,0.20)] text-secondary-foreground text-shadow-[0px_1px_1px_rgba(16,24,40,0.08)] hover:bg-secondary/90",
     },
     {
-      name: "Enterprise",
+      name: "Custom",
       monthlyPrice: "$Custom",
       annualPrice: "$Custom",
-      description: "Custom solutions for large organizations.",
+      description: "Tailored for large organizations.",
       features: [
-        "Everything in Ultra, plus:",
-        "Custom integrations and workflows",
-        "Dedicated infrastructure",
-        "24/7 premium support",
+        "Everything in Enterprise, plus:",
+        "Unlimited streams",
+        "Custom integrations",
+        "On-premise deployment",
+        "24/7 phone support",
         "Custom SLA agreements",
-        "On-premise deployment options",
+        "Advanced analytics",
       ],
-      buttonText: "Contact Us",
+      buttonText: "Get Quote",
       buttonClass:
         "bg-accent shadow-[0px_1px_1px_-0.5px_rgba(16,24,40,0.20)] text-accent-foreground text-shadow-[0px_1px_1px_rgba(16,24,40,0.08)] hover:bg-accent/90",
     },
@@ -83,11 +87,10 @@ export function PricingSection() {
       <div className="self-stretch relative flex flex-col justify-center items-center gap-2 py-0">
         <div className="flex flex-col justify-start items-center gap-4">
           <h2 className="text-center text-foreground text-4xl md:text-5xl font-semibold leading-tight md:leading-[40px]">
-            Pricing built for every developer
+            Simple pricing for every streamer
           </h2>
           <p className="self-stretch text-center text-muted-foreground text-sm font-medium leading-tight">
-            Choose a plan that fits your coding workflow, from individuals starting out to <br /> growing professionals
-            and large organizations.
+            From growing channels to professional streamers and agencies. Start free, upgrade when you're ready.
           </p>
         </div>
         <div className="pt-4">
@@ -99,7 +102,7 @@ export function PricingSection() {
               <span
                 className={`text-center text-sm font-medium leading-tight ${isAnnual ? "text-accent-foreground" : "text-zinc-400"}`}
               >
-                Annually
+                Annual (Save 17%)
               </span>
             </button>
             <button
@@ -131,7 +134,7 @@ export function PricingSection() {
                   {plan.popular && (
                     <div className="ml-2 px-2 overflow-hidden rounded-full justify-center items-center gap-2.5 inline-flex mt-0 py-0.5 bg-gradient-to-b from-primary-light/50 to-primary-light bg-white">
                       <div className="text-center text-primary-foreground text-xs font-normal leading-tight break-words">
-                        Popular
+                        Most Popular
                       </div>
                     </div>
                   )}
@@ -194,7 +197,7 @@ export function PricingSection() {
               <div
                 className={`self-stretch text-sm font-medium leading-tight ${plan.popular ? "text-primary-foreground/70" : "text-muted-foreground"}`}
               >
-                {plan.name === "Free" ? "Get Started today:" : "Everything in Free +"}
+                {plan.name === "Free" ? "Get Started today:" : plan.name === "Professional" ? "Everything in Free +" : plan.name === "Enterprise" ? "Everything in Professional +" : "Everything in Enterprise +"}
               </div>
               <div className="self-stretch flex flex-col justify-start items-start gap-3">
                 {plan.features.map((feature) => (

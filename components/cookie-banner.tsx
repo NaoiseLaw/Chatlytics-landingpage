@@ -32,7 +32,7 @@ export function CookieBanner() {
       <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="flex-1 text-sm text-muted-foreground">
           <p>
-            We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.{" "}
+            We use cookies to improve your experience and analyze site usage. By continuing, you agree to our cookie policy.{" "}
             <a href="/privacy" className="underline hover:text-foreground">
               Learn more
             </a>

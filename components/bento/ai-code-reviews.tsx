@@ -216,7 +216,7 @@ const AiCodeReviews: React.FC = () => {
                 fontWeight: 500,
               }}
             >
-              Apply changes
+              View Details
             </span>
             <span
               style={{
@@ -224,7 +224,7 @@ const AiCodeReviews: React.FC = () => {
                 fontWeight: 500,
               }}
             >
-              ⌘Y
+              ⌘S
             </span>
           </button>
         </div>

@@ -23,8 +23,8 @@ export function ContactSection() {
       <div className="max-w-2xl w-full mx-auto">
         <div className="flex flex-col gap-6">
           <div className="text-center">
-            <h2 className="text-4xl md:text-5xl font-semibold text-foreground mb-4">Get in Touch</h2>
-            <p className="text-muted-foreground text-lg">Have questions? We'd love to hear from you.</p>
+            <h2 className="text-4xl md:text-5xl font-semibold text-foreground mb-4">Let's Connect</h2>
+            <p className="text-muted-foreground text-lg">Questions about Chatlytics? Want a demo? We're here to help.</p>
           </div>
 
           <div className="flex justify-center">
@@ -37,7 +37,7 @@ export function ContactSection() {
                     : "text-muted-foreground hover:text-foreground"
                 }`}
               >
-                For Users
+                For Streamers
               </button>
               <button
                 onClick={() => setContactType("investors")}
@@ -47,7 +47,7 @@ export function ContactSection() {
                     : "text-muted-foreground hover:text-foreground"
                 }`}
               >
-                For Investors
+                For Partners
               </button>
             </div>
           </div>
@@ -75,7 +75,7 @@ export function ContactSection() {
               <Textarea
                 id="message"
                 placeholder={
-                  contactType === "investors" ? "Tell us about your investment interests..." : "How can we help you?"
+                  contactType === "investors" ? "Let's discuss partnership opportunities..." : "Tell us about your streaming setup..."
                 }
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
@@ -93,7 +93,7 @@ export function ContactSection() {
             </Button>
           </form>
 
-          <p className="text-center text-sm text-muted-foreground">We typically respond within 24 hours</p>
+          <p className="text-center text-sm text-muted-foreground">We typically respond within 12 hours</p>
         </div>
       </div>
     </section>

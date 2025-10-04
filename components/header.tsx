@@ -13,7 +13,7 @@ export function Header() {
   const navItems = [
     { name: "Features", href: "#features-section" },
     { name: "Pricing", href: "#pricing-section" },
-    { name: "Testimonials", href: "#testimonials-section" },
+    { name: "How It Works", href: "#testimonials-section" },
   ]
 
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -47,7 +47,7 @@ export function Header() {
           <ThemeToggle />
           <Link href="https://vercel.com/home" target="_blank" rel="noopener noreferrer" className="hidden md:block">
             <Button className="bg-secondary text-secondary-foreground hover:bg-secondary/90 px-6 py-2 rounded-full font-medium shadow-sm">
-              Try for Free
+              Start Free Trial
             </Button>
           </Link>
           <Sheet>
@@ -74,7 +74,7 @@ export function Header() {
                 ))}
                 <Link href="https://vercel.com/home" target="_blank" rel="noopener noreferrer" className="w-full mt-4">
                   <Button className="bg-secondary text-secondary-foreground hover:bg-secondary/90 px-6 py-2 rounded-full font-medium shadow-sm">
-                    Try for Free
+                    Start Free Trial
                   </Button>
                 </Link>
               </nav>

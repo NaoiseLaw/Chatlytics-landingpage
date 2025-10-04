@@ -89,24 +89,24 @@ const ParallelCodingAgents: React.FC<ParallelCodingAgentsProps> = ({ className =
   const agents = [
     {
       icon: <CheckmarkIcon />,
-      title: "Update buttons",
-      tokens: "12k tokens",
-      model: "o3",
-      branch: "pointer/update-pain...",
+      title: "Last stream",
+      tokens: "85% positive",
+      model: "sentiment-v2",
+      branch: "4.2k messages analyzed",
     },
     {
       icon: <RefreshIcon />,
-      title: "Fix sanity issue",
-      tokens: "12k tokens",
-      model: "claude-sonnet-4",
-      branch: "pointer/update-pain...",
+      title: "7 days",
+      tokens: "12% negative",
+      model: "emotion-detect",
+      branch: "sentiment analysis",
     },
     {
       icon: <SparklesIcon />,
-      title: "Plan for seamless toast",
+      title: "30 days",
       tokens: "30k tokens",
       model: "o3",
-      branch: "pointer/update-pain...",
+      branch: "trending keywords",
     },
   ]
 

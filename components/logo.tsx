@@ -6,7 +6,7 @@ export function Logo({ className = "" }: { className?: string }) {
       </div>
 
       {/* Text adapts to theme */}
-      <span className="text-2xl font-bold text-gray-900 dark:text-white">Pointer AI</span>
+      <span className="text-2xl font-bold text-gray-900 dark:text-white">Chatlytics</span>
     </div>
   )
 }

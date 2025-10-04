@@ -8,9 +8,9 @@ export function FooterSection() {
       {/* Left Section: Logo, Description, Social Links */}
       <div className="flex flex-col justify-start items-start gap-8 p-4 md:p-8">
         <div className="flex gap-3 items-stretch justify-center">
-          <div className="text-center text-foreground text-xl font-semibold leading-4">Pointer</div>
+          <div className="text-center text-foreground text-xl font-semibold leading-4">Chatlytics</div>
         </div>
-        <p className="text-foreground/90 text-sm font-medium leading-[18px] text-left">Coding made effortless</p>
+        <p className="text-foreground/90 text-sm font-medium leading-[18px] text-left">Know How Your Chat Feels</p>
         <div className="flex justify-start items-start gap-3">
           <a href="#" aria-label="Twitter" className="w-4 h-4 flex items-center justify-center">
             <Twitter className="w-full h-full text-muted-foreground" />
@@ -35,13 +35,13 @@ export function FooterSection() {
               Pricing
             </a>
             <a href="#" className="text-foreground text-sm font-normal leading-5 hover:underline">
-              Integrations
+              Demo
             </a>
             <a href="#" className="text-foreground text-sm font-normal leading-5 hover:underline">
-              Real-time Previews
+              Mobile Apps
             </a>
             <a href="#" className="text-foreground text-sm font-normal leading-5 hover:underline">
-              Multi-Agent Coding
+              API Docs
             </a>
           </div>
         </div>
@@ -49,16 +49,16 @@ export function FooterSection() {
           <h3 className="text-muted-foreground text-sm font-medium leading-5">Company</h3>
           <div className="flex flex-col justify-center items-start gap-2">
             <a href="#" className="text-foreground text-sm font-normal leading-5 hover:underline">
-              About us
+              About
             </a>
             <a href="#" className="text-foreground text-sm font-normal leading-5 hover:underline">
-              Our team
+              Blog
             </a>
             <a href="#" className="text-foreground text-sm font-normal leading-5 hover:underline">
               Careers
             </a>
             <a href="#" className="text-foreground text-sm font-normal leading-5 hover:underline">
-              Brand
+              Press Kit
             </a>
             <a href="#" className="text-foreground text-sm font-normal leading-5 hover:underline">
               Contact
@@ -69,19 +69,19 @@ export function FooterSection() {
           <h3 className="text-muted-foreground text-sm font-medium leading-5">Resources</h3>
           <div className="flex flex-col justify-center items-start gap-2">
             <a href="#" className="text-foreground text-sm font-normal leading-5 hover:underline">
-              Terms of use
-            </a>
-            <a href="#" className="text-foreground text-sm font-normal leading-5 hover:underline">
-              API Reference
-            </a>
-            <a href="#" className="text-foreground text-sm font-normal leading-5 hover:underline">
               Documentation
             </a>
             <a href="#" className="text-foreground text-sm font-normal leading-5 hover:underline">
-              Community
+              Support
             </a>
             <a href="#" className="text-foreground text-sm font-normal leading-5 hover:underline">
-              Support
+              Community Discord
+            </a>
+            <a href="#" className="text-foreground text-sm font-normal leading-5 hover:underline">
+              Terms
+            </a>
+            <a href="#" className="text-foreground text-sm font-normal leading-5 hover:underline">
+              Privacy
             </a>
           </div>
         </div>

@@ -36,33 +36,33 @@ const BentoCard = ({ title, description, Component }) => (
 export function BentoSection() {
   const cards = [
     {
-      title: "AI-powered code reviews.",
-      description: "Get real-time, smart suggestions for cleaner code.",
+      title: "5-minute sentiment updates",
+      description: "Track positive, negative, and neutral sentiment with updates every 5 minutes.",
       Component: AiCodeReviews,
     },
     {
-      title: "Real-time coding previews",
-      description: "Chat, collaborate, and instantly preview changes together.",
+      title: "Emotion detection",
+      description: "Identify joy, excitement, frustration, and more in your chat.",
       Component: RealtimeCodingPreviews,
     },
     {
-      title: "One-click integrations",
-      description: "Easily connect your workflow with popular dev tools.",
+      title: "Toxicity alerts",
+      description: "Get instant notifications when chat sentiment turns negative.",
       Component: OneClickIntegrationsIllustration,
     },
     {
-      title: "Flexible MCP connectivity",
-      description: "Effortlessly manage and configure MCP server access.",
+      title: "Trending keywords",
+      description: "See what your audience is talking about most in real-time.",
       Component: MCPConnectivityIllustration, // Updated component
     },
     {
-      title: "Launch parallel coding agents", // Swapped position
-      description: "Solve complex problems faster with multiple AI agents.",
+      title: "Mobile monitoring", // Swapped position
+      description: "Check sentiment from anywhere with iOS and Android apps.",
       Component: ParallelCodingAgents, // Updated component
     },
     {
-      title: "Deployment made easy", // Swapped position
-      description: "Go from code to live deployment on Vercel instantly.",
+      title: "Historical analytics", // Swapped position
+      description: "Review 90 days of sentiment history to identify patterns.",
       Component: EasyDeployment,
     },
   ]
@@ -74,11 +74,10 @@ export function BentoSection() {
         <div className="self-stretch py-8 md:py-14 flex flex-col justify-center items-center gap-2 z-10">
           <div className="flex flex-col justify-start items-center gap-4">
             <h2 className="w-full max-w-[655px] text-center text-foreground text-4xl md:text-6xl font-semibold leading-tight md:leading-[66px]">
-              Empower Your Workflow with AI
+              Real-Time Intelligence for Streamers
             </h2>
             <p className="w-full max-w-[600px] text-center text-muted-foreground text-lg md:text-xl font-medium leading-relaxed">
-              Ask your AI Agent for real-time collaboration, seamless integrations, and actionable insights to
-              streamline your operations.
+              Stop guessing what your audience thinks. Get instant sentiment analysis, emotion detection, and actionable insights to optimize your content in real-time.
             </p>
           </div>
         </div>

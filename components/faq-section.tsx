@@ -6,34 +6,34 @@ import { ChevronDown } from "lucide-react"
 
 const faqData = [
   {
-    question: "What is Pointer and who is it for?",
+    question: "How is Chatlytics different from StreamElements or Streamlabs?",
     answer:
-      "Pointer is an AI-powered development platform designed for developers, teams, and organizations who want toaccelerate their coding workflow. It's perfect for both individual developers looking to enhance their productivity and teams seeking seamless collaboration tools.",
+      "StreamElements and Streamlabs provide post-stream analytics with 24+ hour delays. Chatlytics is the only tool offering real-time sentiment analysis with 5-minute updates during your stream, allowing you to make content adjustments when they actually matter.",
   },
   {
-    question: "How does Pointer's AI code review work?",
+    question: "How accurate is the sentiment analysis on gaming content?",
     answer:
-      "Our AI analyzes your code in real-time, providing intelligent suggestions for improvements, catching potential bugs, and ensuring best practices. It learns from your coding patterns and adapts to your team's standards, making code reviews faster and more consistent.",
+      "Our AI achieves 88-92% accuracy on Twitch chat, including gaming slang, emotes, and memes. We use intelligent sampling and gaming-specific language processing to understand the unique way viewers communicate.",
   },
   {
-    question: "Can I integrate Pointer with my existing tools?",
+    question: "Can I use Chatlytics with OBS or Streamlabs?",
     answer:
-      "Yes! Pointer offers one-click integrations with popular development tools including GitHub, GitLab, VS Code, Slack, and many more. Our MCP connectivity allows you to easily manage and configure server access across your entire development stack.",
+      "Yes! Chatlytics works alongside your existing streaming setup. We provide browser source widgets for OBS/Streamlabs overlays, and our dashboard runs in any browser. No need to change your current workflow.",
   },
   {
     question: "What's included in the free plan?",
     answer:
-      "The free plan includes real-time code suggestions, basic integrations, single MCP server connection, up to 2 AI coding agents, and Vercel deployments with Pointer branding. It's perfect for individual developers getting started.",
+      "The free plan includes basic sentiment analysis (positive/negative/neutral), 24-hour history, and monitoring for one stream. Perfect for testing the waters and understanding your chat's overall vibe.",
   },
   {
-    question: "How do parallel coding agents work?",
+    question: "How does the 5-minute delay work?",
     answer:
-      "Our parallel coding agents can work on different parts of your codebase simultaneously, solving complex problems faster than traditional single-threaded approaches. You can launch multiple agents to handle different tasks like bug fixes, feature development, and code optimization concurrently.",
+      "We analyze your chat in 5-minute batches using intelligent sampling. This provides near real-time insights while keeping costs sustainable. You'll see sentiment updates every 5 minutes, fast enough to adjust content during your stream.",
   },
   {
-    question: "Is my code secure with Pointer?",
+    question: "Is my stream data private and secure?",
     answer:
-      "Absolutely. We use enterprise-grade security measures including end-to-end encryption, secure data transmission, and compliance with industry standards. Your code never leaves your secure environment without your explicit permission, and we offer on-premises deployment options for enterprise customers.",
+      "Absolutely. We're GDPR compliant, use enterprise-grade encryption, and never store raw chat messages. Your sentiment data is yours alone. We never share or sell your information, and you can delete everything anytime.",
   },
 ]
 
@@ -99,7 +99,7 @@ export function FAQSection() {
             Frequently Asked Questions
           </h2>
           <p className="self-stretch text-center text-muted-foreground text-sm font-medium leading-[18.20px] break-words">
-            Everything you need to know about Pointer and how it can transform your development workflow
+            Everything you need to know about real-time sentiment analysis for your streams
           </p>
         </div>
       </div>
