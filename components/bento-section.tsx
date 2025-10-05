@@ -1,9 +1,9 @@
-import AiCodeReviews from "./bento/ai-code-reviews"
-import RealtimeCodingPreviews from "./bento/real-time-previews"
-import OneClickIntegrationsIllustration from "./bento/one-click-integrations-illustration"
-import MCPConnectivityIllustration from "./bento/mcp-connectivity-illustration" // Updated import
-import EasyDeployment from "./bento/easy-deployment"
-import ParallelCodingAgents from "./bento/parallel-agents" // Updated import
+import SentimentUpdates from "./bento/sentiment-updates"
+import EmotionDetection from "./bento/emotion-detection"
+import ToxicityAlerts from "./bento/toxicity-alerts"
+import TrendingKeywords from "./bento/trending-keywords"
+import MobileMonitoring from "./bento/mobile-monitoring"
+import HistoricalAnalytics from "./bento/historical-analytics"
 
 const BentoCard = ({ title, description, Component }) => (
   <div className="overflow-hidden rounded-2xl border border-white/20 flex flex-col justify-start items-start relative">
@@ -38,32 +38,32 @@ export function BentoSection() {
     {
       title: "5-minute sentiment updates",
       description: "Track positive, negative, and neutral sentiment with updates every 5 minutes.",
-      Component: AiCodeReviews,
+      Component: SentimentUpdates,
     },
     {
       title: "Emotion detection",
       description: "Identify joy, excitement, frustration, and more in your chat.",
-      Component: RealtimeCodingPreviews,
+      Component: EmotionDetection,
     },
     {
       title: "Toxicity alerts",
       description: "Get instant notifications when chat sentiment turns negative.",
-      Component: OneClickIntegrationsIllustration,
+      Component: ToxicityAlerts,
     },
     {
       title: "Trending keywords",
       description: "See what your audience is talking about most in real-time.",
-      Component: MCPConnectivityIllustration, // Updated component
+      Component: TrendingKeywords,
     },
     {
-      title: "Mobile monitoring", // Swapped position
+      title: "Mobile monitoring",
       description: "Check sentiment from anywhere with iOS and Android apps.",
-      Component: ParallelCodingAgents, // Updated component
+      Component: MobileMonitoring,
     },
     {
-      title: "Historical analytics", // Swapped position
+      title: "Historical analytics",
       description: "Review 90 days of sentiment history to identify patterns.",
-      Component: EasyDeployment,
+      Component: HistoricalAnalytics,
     },
   ]
 
